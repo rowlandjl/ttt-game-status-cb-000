@@ -20,6 +20,6 @@ def won?(board)
     status = combo.all? do |num|
       board[num] == "X" || board[num] == "O"
     end
+    status 
   end
-  status 
 end
