@@ -22,5 +22,4 @@ def won?(board)
     end
     status
   end
-  status 
 end
