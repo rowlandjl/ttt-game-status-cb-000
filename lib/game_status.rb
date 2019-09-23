@@ -58,5 +58,6 @@ def winner(board)
     win.each do |index|
       win = board[index]
     end
+    win 
   end
 end
