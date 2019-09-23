@@ -18,7 +18,7 @@ WIN_COMBINATIONS = [
 def won?(board)
   WIN_COMBINATIONS.each do |combo|
     combo.all? do |num|
-      num == "X" || num == "O"
+      board[num] == "X" || board[num] == "O"
     end
   end
 end
