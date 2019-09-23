@@ -51,5 +51,12 @@ def over?(board)
 end
 
 def winner(board)
-  won?(board)
+  if !won?(board)
+    nil
+  else
+    win = won?(board)
+    win.each do |index|
+      board[index]
+    end
+  end 
 end
