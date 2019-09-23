@@ -19,6 +19,9 @@ def won?(board)
   WIN_COMBINATIONS.each_with_index do |combo, index|
     if position_taken?(board, combo[0]) == true
       if board[combo[0]] == board[combo[1]] && board[combo[1]] == board[combo[2]]
+        return WIN_COMBINATIONS[index]
+      end
+    end
   end
   return false
 end
